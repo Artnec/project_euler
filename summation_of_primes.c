@@ -13,20 +13,15 @@
 int		main(void)
 {
 	char *arr = calloc(MAX, 1);
-	for (int i = 2; i < MAX; i++)
-	{
-		if (arr[i] == 0)
-		{
-			for (int n = i + i; n < MAX; n += i)
-				arr[n] = 1;
-		}
-	}
-
 	long sum = 0;
 	for (int i = 2; i < MAX; i++)
 	{
 		if (arr[i] == 0)
+		{
 			sum += i;
+			for (int n = i + i; n < MAX; n += i)
+				arr[n] = 1;
+		}
 	}
 	printf("%ld\n", sum);
 }
