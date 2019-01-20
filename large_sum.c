@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
+/*
+** Work out the first ten digits of the sum of the following
+** one-hundred 50-digit numbers (they are in "large_sum_numbers" file)
+*/
+
 void	add(char *a, int al, char *b, int bl)
 {
 	while (--bl >= 0)
