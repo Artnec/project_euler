@@ -54,7 +54,7 @@ int		main(void)
 {
 	char buf[50000];
 	FILE *fp = fopen("names.txt", "r");
-	int s = fscanf(fp, "%s", buf);
+	fscanf(fp, "%s", buf);
 	fclose(fp);
 
 	char names[6000][32];
